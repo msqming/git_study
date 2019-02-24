@@ -1,0 +1,14 @@
+Git的使用
+	设置身份标识
+	git config --global user.email "you@example.com"
+	git config --global user.name "Your Name"
+
+	git init		--初始化仓库
+	git status		  查看状态
+	git add 文件名		提交文件跟踪 .代表全部
+	
+	git commit -m '详细的描述信息'	创建提交记录(版本)
+	
+	git reflog					查看所有历史版本
+	git reset --hard 版本号		回滚任意历史版本
+
