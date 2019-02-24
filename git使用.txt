@@ -15,3 +15,4 @@ Git的使用
   git stash           正在开发的版本提交到另外的地方回去修改原版本
   git stash pop       回到正常开发的版本中
 
+  http://www.cnblogs.com/wupeiqi/p/7295372.html
