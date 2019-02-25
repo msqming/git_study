@@ -1,0 +1,64 @@
+git使用
+
+	-- 配置用户和邮箱
+	git config --global user.name 'username'
+	git config --global user.email 'you@example.com'
+	
+	
+	git init					初始化，表示即将对当前文件夹进行版本控制。
+	git status				    查看Git当前状态，如：那些文件被修改过、那些文件还未提交到版本库等。
+	git add 文件名				将指定文件添加到版本库的暂存状态。
+	git commit -m '提交信息'  	将暂存区的文件提交到版本库的分支。
+	git log					  	查看提交记录，即：历史版本记录
+	git reflog   				查看所有的提交记录(版本号)
+	git reset --hard 版本号		回滚到指定版本号
+	
+	git branch 分支名称             创建分支
+	git checkout 分支名称           切换分支
+	git branch -m 分支名称          创建并切换到指定分支
+	git branch                      查看所有分支
+	git branch -d 分支名称          删除分支
+	git merge 分支名称              将指定分支合并到当前分支
+	
+	# 要先在GitHub网站上创建一个仓库地址,才能进行推送，推送要输入用户名和密码
+	git remote add origin https://github.com/msqming/pondo.git   # 为地址起一个别名origin
+	git push origin master          # 将本地master分支内容以及版本信息推送到GitHub
+	git push origin dev				# 将本地dev分支推送到GitHub
+	
+	git clone https://github.com/msqming/pondo.git    # 将项目从GitHub中获取
+	git Branch                                        # 默认获取到得只有master分支
+	git branch dev origin dev                         # 创建dev分支且和远程dev分支同步
+	git checkout dev                                  # 切换到dev分支
+	git pull origin dev								  # 将线上的没开发完的分支拉到本地继续开发
+		git fetch origin dev
+		git rebase origin/dev						  # 保持提交记录的整洁
+	
+	-- 多人协同开发
+		1、允许他人操作程序
+			- 合作者
+			- 创建组织
+		2、分支
+			- master
+			- dev
+			- zuyuan1
+			- zuyuan2
+		3、规则
+			- 一起合并
+			合作时间：1或2day(小功能完成)
+		
+		
+	-- 做代码review
+		- 创建review分支
+		- 组长审核代码review
+		
+	技术提升：
+		1、看优秀项目的源码
+		2、做开源项目
+	
+	
+	
+	
+	
+	
+	
+	
